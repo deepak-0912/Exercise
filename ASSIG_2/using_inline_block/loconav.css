@@ -1,0 +1,49 @@
+.parent{
+	
+}
+.child1{
+	width: 70%;
+	height: auto;
+	display: inline-block;
+}
+.child2{
+	max-width: 500px;
+	height: 300px;
+	display: inline-block;
+	
+}
+.child11{
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	
+}
+.child12{
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	float: right;
+	
+
+}
+.child13{
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	
+}
+.child14{
+	display: inline-block;
+	width: 50%;
+	height: auto;
+	float: right;
+
+}
+.child21{
+	box-shadow: 0px 0px 10px 10px grey;
+	max-width: 60%;
+	margin-top: 40px;
+	margin-left: 40px;
+	height: 400px;
+	padding: 40px;	
+}
