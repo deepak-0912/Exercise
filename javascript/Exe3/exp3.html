@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASSIGMENT3</title>
+</head>
+<body>
+<div id="d1" style="height: 100px;overflow:scroll;background:red">
+	
+	<input type="checkbox" id="color" onclick="myfunction(id,0)" name="color" value="color">color	
+	<div id="lb1" style="display:none">	
+     <input type="checkbox" id="red"  name="red" >red
+     <br>
+     <input type="checkbox" id="yellow" name="">yellow
+     <br>
+     <input type="checkbox" id="green"  name="">green
+     <br>
+     <input type="checkbox" id="blue"  name=""> blue
+     </div>
+     <br>
+     <input type="checkbox" id="movie" onclick="myfunction(id,1)" name="movie" value="movie">movie	
+	<div id="lb2" style="display:none">	
+     <input type="checkbox" id="red"  name="red">bollywood
+     <br>
+     <input type="checkbox" id="yellow" name="">tollywood
+     <br>
+     <input type="checkbox" id="green"  name="">hollywood
+     <br>
+     <input type="checkbox" id="blue"  name=""> bhojpuri
+     </div>
+     <br>
+      <input type="checkbox" id="drink" onclick="myfunction(id,2)" name="drink" value="drink">drink
+	<div id="lb3" style="display:none">	
+     <input type="checkbox" id="soft"  name="soft">softdrink
+     <br>
+     <input type="checkbox" id="medium" name="">medium
+     <br>
+     <input type="checkbox" id="hard"  name="">hard drink
+     </div>
+     <br>
+     <input type="checkbox" id="bike" onclick="myfunction(id,3)" name="bike" value="bike">bike
+	<div id="lb4" style="display:none">	
+     <input type="checkbox" id="honda"  name="honda">honda
+     <br>
+     <input type="checkbox" id="hero" name="">hero
+     <br>
+     <input type="checkbox" id="pulsar"  name="">pulsar
+     </div>
+       
+</div>
+<script>
+	function myfunction(x,i)
+	{
+		
+		var z=document.getElementById("d1");
+		
+		var y=z.getElementsByTagName("div");
+		if(document.getElementById(x).checked)
+		{
+
+		y[i].style.display="block";
+	   }
+	   else
+	   {
+	   			y[i].style.display="none";
+	   			let a=y[i].getElementsByTagName("input");
+	   			for(let j=0;j<a.length;j++)
+	   			{
+	   				a[j].checked=false;
+	   			}
+	   }
+	   let b=document.getElementById("d1");
+	   if(x=="color")
+	   {
+	   	console.log("badgujjar");
+	   	b.scrollBy(0,20);
+	   }
+	   else if(x=='movie')
+	   {
+	   	console.log("kumar");
+	   	b.scrollBy(0,40);
+	   }
+	   else if(x=='drink')
+	   {
+	   	console.log("ssss");
+	   	b.scrollBy(0,45);
+	   }
+	   else if(x=='bike')
+	   {
+        b.scrollBy(0,55);
+	   }
+	}
+</script>
+</body>
+</html>
