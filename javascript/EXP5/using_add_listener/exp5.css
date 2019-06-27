@@ -1,0 +1,49 @@
+#d1{
+			display: inline-block;
+		}
+		#d11{
+			display: inline-block;
+			height: 200px;
+			
+			width: 200px;
+			
+			margin-top: 200px;
+			margin-left: 200px;
+		}
+		#d12{
+			display: inline-block;
+			height: 200px;
+			width: 200px;
+			
+			float: right;
+			margin-top: 200px;
+
+			
+			
+		}
+		#d13{
+			display: inline-block;
+			height: 200px;
+			float: right;
+			margin-top: 200px;
+			width: 200px;
+			background: pink;
+			
+			
+		}
+		#in1{
+			width: 100px;
+			margin-left: 40px;
+			margin-top: 60px;
+		}
+		#in2{
+			width: 100px;
+			margin-left: 40px;
+			margin-top: 40px;
+		}
+		#s1{
+			width: 200px;
+		}
+		#s2{
+			width: 200px;
+		}
