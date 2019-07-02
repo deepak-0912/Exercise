@@ -1,6 +1,7 @@
 /* eslint-disable func-names */
 class Box {
  
+  // eslint-disable-next-line class-methods-use-this
   check(checkId) {
     const index = Box.arrId.indexOf(checkId.id);
     console.log(index);
