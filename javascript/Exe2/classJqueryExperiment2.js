@@ -1,11 +1,10 @@
 class Box {
   constructor(limit) {
-    this.parentId = document.getElementById("parentId");
-    this.parentClass = document.getElementsByClassName("day1");
-    this.childClass = document.getElementsByClassName("day");
+    this.parentId = $("#parentId");
+    this.parentClass = $(".day1");
+    this.childClass = $(".day");
     this.limit = limit;
     this.checkArr = [];
-    this.cnt = limit;
   }
 
   myFunction(checkId) {
@@ -16,23 +15,25 @@ class Box {
       if (checkId.id === "checkNone") {
         const len = this.checkArr.length;
         for (let i = 0; i < len; i++) {
-          document.getElementById(this.checkArr[i]).checked = false;
+          $("#" + this.checkArr[i]).prop("checked", false);
+          // document.getElementById(this.checkArr[i]).checked = false;
         }
         this.checkArr = [];
-        this.limit = this.cnt;
+        this.limit = 3;
       } else if (this.limit > 0) {
-        document.getElementById("checkNone").checked = false;
+        $("#checkNone").prop("checked",false);
         this.checkArr.push(checkId.id);
         this.limit -= 1;
       } else {
-        document.getElementById(checkId.id).checked = false;
+        $(`#${checkId.id}`).prop("checked", false);
         // eslint-disable-next-line no-alert
         alert("only 3 day can be select");
       }
     } else {
       // eslint-disable-next-line no-console
       // console.log("badgujjar");
-      document.getElementById(checkId.id).checked = false;
+      //document.getElementById(checkId.id).checked = false;
+      $("#"+checkId.id).prop("checked",false);
       this.checkArr.splice(index, 1);
       this.limit += 1;
     }
