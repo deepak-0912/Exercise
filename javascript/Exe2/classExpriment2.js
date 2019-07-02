@@ -8,7 +8,7 @@ class Box {
     this.cnt = limit;
   }
 
-  myFunction(checkId) {
+  checkToggel(checkId) {
     const index = this.checkArr.indexOf(checkId.id);
     if (index === -1) {
       // eslint-disable-next-line no-console
@@ -45,7 +45,7 @@ class Box {
         "click",
         // eslint-disable-next-line func-names
         function() {
-          this.myFunction(this.childClass[i]);
+          this.checkToggel(this.childClass[i]);
         }.bind(this)
       );
     }
