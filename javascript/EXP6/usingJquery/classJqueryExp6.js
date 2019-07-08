@@ -7,11 +7,11 @@ class createDiv {
   }
 
   createDivChild() {
-    const child = $("<div></div>").text(this.divNo++);
+    const child = $("<div></div>").attr("data-div-no",this.divNo++);
     child.addClass("inner");
     this.parentDiv.append(child);
     child.click(function() {
-      alert(`Div no is =${child.html()}`);
+      alert(child.data('div-no'));
     });
   }
 
